@@ -1,0 +1,41 @@
+{
+  "definitions": {
+    "Value": {
+      "properties": {
+        "altAmount": {
+          "title": "Alternative Amount",
+          "description": "The Amount on the alternative currency.",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "altCurrency": {
+          "title": "Currency",
+          "description": "The currency for each amount should always be specified using the uppercase 3-letter currency code from ISO4217.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "exchangeRate": {
+          "title": "Exchange Rate",
+          "description": "The convertion between amount and altAmount on the exchange rate date",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "exchangeRateDate": {
+          "title": "Exchange Rate Date",
+          "description": "The date of this exchange rate was applied.",
+          "format": "date-time",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

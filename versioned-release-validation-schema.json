@@ -1,0 +1,95 @@
+{
+  "definitions": {
+    "Value": {
+      "properties": {
+        "altAmount": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "releaseDate": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "releaseID": {
+                "type": "string"
+              },
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "releaseTag": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "altCurrency": {
+          "$ref": "#/definitions/StringNullVersioned"
+        },
+        "exchangeRate": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "releaseDate": {
+                "format": "date-time",
+                "type": "string"
+              },
+              "releaseID": {
+                "type": "string"
+              },
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "releaseTag": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "exchangeRateDate": {
+          "$ref": "#/definitions/StringNullDateTimeVersioned"
+        }
+      }
+    },
+    "ValueUnversioned": {
+      "properties": {
+        "altAmount": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "altCurrency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "exchangeRate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "exchangeRateDate": {
+          "format": "date-time",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
